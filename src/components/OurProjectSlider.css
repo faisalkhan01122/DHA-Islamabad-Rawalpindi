@@ -1,0 +1,41 @@
+/* Position the arrows on the sides of the slider */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: transparent; /* Make the background transparent */
+  border: none;
+}
+
+/* Style for the left (previous) arrow */
+.slick-prev {
+  left: 10px; /* Gap between the arrow and the image */
+}
+
+/* Style for the right (next) arrow */
+.slick-next {
+  right: 10px; /* Gap between the arrow and the image */
+}
+
+/* Color the arrows with the primary color */
+.slick-prev .text-primary,
+.slick-next .text-primary {
+  color: var(--primary-color); /* Replace with your primary color */
+  font-size: 0px; /* Adjust the size of the arrows */
+}
+
+/* Hover effect for arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  color: var(
+    --primary-dark-color
+  ); /* Replace with a darker shade of your primary color */
+}
+
+/* Adjust the gap between the image and the arrows */
+.slick-slide img {
+  margin-left: 0px; /* Adjust this value to create a gap between the image and arrows */
+  margin-right: 0px; /* Adjust this value if you want to add gap on the right side as well */
+}

@@ -1,0 +1,27 @@
+/* Style for the slider arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  z-index: 1; /* Make sure they are above the slider content */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: dark background for the buttons */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transform: translateY(-50%); /* Center the arrows vertically */
+}
+
+.slick-prev {
+  left: 10px; /* Position left arrow on the left side */
+}
+
+.slick-next {
+  right: 10px; /* Position right arrow on the right side */
+}
