@@ -13,7 +13,7 @@ import OurProjectSlider from "../OurProjectSlider";
 import LifeStyleSlider from "../LifeStyleSlider";
 
 import { phasesData } from "../../Utils/data";
-
+import bgvideo from "../../assets/Phases/phase567.mp4";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -31,7 +31,7 @@ const Home = () => {
       <div className="relative w-full h-full">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover opacity-70"
-          src="/1. DHA NIGHTLIFE (1).mp4" // Replace with your video path
+          src={bgvideo} // Replace with your video path
           autoPlay
           loop
           muted
