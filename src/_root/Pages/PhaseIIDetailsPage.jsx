@@ -1,7 +1,7 @@
 import React from "react";
 import PhasesDetails from "../../components/PhasesDetails";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
-import phase2 from "../../assets/Phases/phase2.mp4";
+import phase2 from "../../assets/Phases/phase567.mp4";
 import phase2detalies1 from "../../assets/Images/Phases/phase2m (2).png";
 import phase2detalies2 from "../../assets/Images/Phases/phase2m (3).png";
 
