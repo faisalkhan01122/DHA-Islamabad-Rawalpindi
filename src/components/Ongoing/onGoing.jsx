@@ -2,20 +2,26 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionBlocks from "../Home/SectionBlocks";
+import ongoing from "../../assets/Images/Phases/DHA Down Town.jpg";
+import ongoing2 from "../../assets/Images/Phases/RVN Pic.jpg";
+import ongoing1 from "../../assets/Images/Phases/RVS Pic (1).jpg";
+
+import HeroSectionWithHeading from "../Share/HeroScetionWithHeading";
+import AdvertisementCard from "../Advertisement/AdvertisementCard";
 const onGoings = [
   {
-    title: "Margalla Orchard",
+    title: "RVS ",
 
     link: "/phase-V-details",
-    img: "/images.jfif",
+    imageUrl: ongoing1,
     description:
       "The FGEHA, in partnership with DHA and SCBA, has launched the 'Margalla Orchards' housing project on Park Road, Islamabad.",
   },
   {
-    title: "Kuri Model Scheme",
+    title: "RVN ",
 
     link: "/phase-IV-details",
-    img: "/images.jpeg",
+    imageUrl: ongoing2,
     description:
       "The DHA and CDA have partnered to develop a 10,000-kanal housing scheme in Islamabad’s Zone IV, with plots shared under a land-sharing formula.",
   },
@@ -31,6 +37,7 @@ const OnGoing = () => {
   }, []);
   return (
     <>
+      <HeroSectionWithHeading backgroundImage={ongoing} />
       <div className=" text-white px-5 py-4 relative ">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -50,13 +57,17 @@ const OnGoing = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <SectionBlocks
+                <AdvertisementCard
+                  imageUrl={phase.imageUrl}
+                  title={phase.title}
+                />
+                {/* <SectionBlocks
                   img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
                   description={phase.description}
                   link={phase.link}
-                />
+                /> */}
               </div>
             ))}
           </div>

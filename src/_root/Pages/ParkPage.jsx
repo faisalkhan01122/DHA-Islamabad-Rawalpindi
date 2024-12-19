@@ -1,55 +1,26 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionBlocks from "../../components/Home/SectionBlocks";
 
-import parks1 from "../../assets/Images/RandomImages/education1.png";
-import parks2 from "../../assets/Images/RandomImages/education2.png";
-import parks3 from "../../assets/Images/RandomImages/education3.png";
-import parks4 from "../../assets/Images/RandomImages/education4.png";
-import parks5 from "../../assets/Images/RandomImages/education5.png";
-import parks6 from "../../assets/Images/RandomImages/education6.png";
+import parks from "../../assets/Images/RandomImages/parks1.png";
+import parks1 from "../../assets/Images/RandomImages/parks2.png";
+import parks2 from "../../assets/Images/RandomImages/parks3.png";
+
+import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
+import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 const onGoings = [
   {
-    title: "APS",
+    // title: "APS",
 
     link: "/phase-V-details",
-    img: parks1,
+    imageUrl: parks1,
     description: "Data Required",
   },
   {
-    title: "APS",
+    // title: "APS",
 
     link: "/phase-V-details",
-    img: parks2,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: parks3,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: parks4,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: parks5,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: parks6,
+    imageUrl: parks2,
     description: "Data Required",
   },
 ];
@@ -64,6 +35,10 @@ const ParkPage = () => {
   }, []);
   return (
     <>
+      <HeroSectionWithHeading
+        backgroundImage={parks}
+        heading="CORNICE PARK PH-I"
+      />
       <div
         className=" text-white relative px-5 py-4  "
         style={{
@@ -91,13 +66,17 @@ const ParkPage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <SectionBlocks
+                <AdvertisementCard
+                  imageUrl={phase.imageUrl}
+                  title={phase.title}
+                />
+                {/* <SectionBlocks
                   img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
                   description={phase.description}
                   link={phase.link}
-                />
+                /> */}
               </div>
             ))}
           </div>

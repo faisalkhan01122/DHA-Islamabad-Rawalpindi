@@ -1,54 +1,26 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionBlocks from "../../components/Home/SectionBlocks";
-import education1 from "../../assets/Images/RandomImages/education1.png";
-import education2 from "../../assets/Images/RandomImages/education2.png";
-import education3 from "../../assets/Images/RandomImages/education3.png";
-import education4 from "../../assets/Images/RandomImages/education4.png";
-import education5 from "../../assets/Images/RandomImages/education5.png";
-import education6 from "../../assets/Images/RandomImages/education6.png";
+
+import Retail1 from "../../assets/Images/RandomImages/reatil.jpg";
+import Retail2 from "../../assets/Images/RandomImages/retil2.jpeg";
+import Retails from "../../assets/Images/RandomImages/retails1.jpg";
+
+import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
+import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 const onGoings = [
   {
-    title: "APS",
+    // title: "APS",
 
     link: "/phase-V-details",
-    img: education1,
+    imageUrl: Retail1,
     description: "Data Required",
   },
   {
-    title: "APS",
+    // title: "APS",
 
     link: "/phase-V-details",
-    img: education2,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: education3,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: education4,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: education5,
-    description: "Data Required",
-  },
-  {
-    title: "APS",
-
-    link: "/phase-V-details",
-    img: education6,
+    imageUrl: Retail2,
     description: "Data Required",
   },
 ];
@@ -63,6 +35,7 @@ const RetailPage = () => {
   }, []);
   return (
     <>
+      <HeroSectionWithHeading heading="Retail" backgroundImage={Retails} />
       <div className=" text-white relative px-5 py-4  ">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -81,12 +54,9 @@ const RetailPage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <SectionBlocks
-                  img={phase.img}
+                <AdvertisementCard
                   imageUrl={phase.imageUrl}
                   title={phase.title}
-                  description={phase.description}
-                  link={phase.link}
                 />
               </div>
             ))}

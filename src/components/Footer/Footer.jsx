@@ -1,6 +1,12 @@
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 // Adjust the path to your logo
 
 const Footer = () => {
@@ -60,9 +66,31 @@ const Footer = () => {
             <li className="text-[.8rem] font-semibold md:text-[.9rem]">
               <a href="/">Release Date: 01 Jan, 2020 Ver: 1.4</a>
               <h1 className="flex  text-[1.6rem] gap-4 mt-2">
-                <FaFacebookF className="text-blue-600" />
-                <BsTwitterX className="text-black" />
-                <FaInstagram className="text-red-200" />
+                <Link to={"https://www.youtube.com/@DhaIslamabad-rawalpindi"}>
+                  <FaYoutube className="text-red-700" />
+                </Link>
+                <Link
+                  to={
+                    "https://www.linkedin.com/company/defence-housing-authority-islamabad-rawalpindi/?_l=en_US"
+                  }
+                >
+                  <FaLinkedin className="text-blue-800" />
+                </Link>
+
+                <Link to={"https://www.instagram.com/dhaislamabad_official/"}>
+                  <FaInstagram className="text-red-400" />
+                </Link>
+
+                <Link
+                  to={
+                    "https://www.facebook.com/profile.php?id=100077164429184&ref=xav_ig_profile_web"
+                  }
+                >
+                  <FaFacebookF className="text-blue-600" />
+                </Link>
+                <Link to={"https://twitter.com/Dhair_official"}>
+                  <BsTwitterX className="text-black" />
+                </Link>
               </h1>
             </li>
           </ul>

@@ -1,23 +1,62 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SectionBlocks from "../../components/Home/SectionBlocks";
+import sports from "../../assets/Images/RandomImages/sports6.png";
 import sports1 from "../../assets/Images/RandomImages/sports1.png";
 import sports2 from "../../assets/Images/RandomImages/sports2.png";
+import sports3 from "../../assets/Images/RandomImages/sports3.png";
+import sports4 from "../../assets/Images/RandomImages/sports4.png";
+import sports5 from "../../assets/Images/RandomImages/sports5.png";
+import sports6 from "../../assets/Images/RandomImages/sports6.png";
+import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
+import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 const SportsData = [
   {
-    title: "Sector E Sports Complex",
+    title: "Gym Ph-1",
 
     link: "/phase-V-details",
-    img: sports1,
+    imageUrl: sports1,
     description:
       "A premier destination for fitness and sports enthusiasts, offering state-of-the-art facilities and expert guidance.",
   },
   {
-    title: "Phase II Playground",
+    title: "Tennis  Courts Ph-1",
 
     link: "/phase-V-details",
-    img: sports1,
+    imageUrl: sports4,
+    description:
+      "A dynamic space featuring courts for basketball, football, and tennis, fostering skill development and spirited matches.",
+  },
+  {
+    title: "Table Tennis Ph- l (Emp Only)",
+
+    link: "/phase-V-details",
+    imageUrl: sports2,
+    description:
+      "A dynamic space featuring courts for basketball, football, and tennis, fostering skill development and spirited matches.",
+  },
+  {
+    title: "Mini Gym Ph-l (Emp Only)",
+
+    link: "/phase-V-details",
+    imageUrl: sports3,
+    description:
+      "A premier destination for fitness and sports enthusiasts, offering state-of-the-art facilities and expert guidance.",
+  },
+
+  {
+    title: "Basketball Court Ph-1",
+
+    link: "/phase-V-details",
+    imageUrl: sports5,
+    description:
+      "A premier destination for fitness and sports enthusiasts, offering state-of-the-art facilities and expert guidance.",
+  },
+  {
+    title: "Futsal Ph-1",
+
+    link: "/phase-V-details",
+    imageUrl: sports6,
     description:
       "A dynamic space featuring courts for basketball, football, and tennis, fostering skill development and spirited matches.",
   },
@@ -33,6 +72,7 @@ const SportsPage = () => {
   }, []);
   return (
     <>
+      <HeroSectionWithHeading backgroundImage={sports} heading="Sports" />
       <div className="relative text-white px-5 py-4  ">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -51,12 +91,9 @@ const SportsPage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <SectionBlocks
-                  img={phase.img}
+                <AdvertisementCard
                   imageUrl={phase.imageUrl}
                   title={phase.title}
-                  description={phase.description}
-                  link={phase.link}
                 />
               </div>
             ))}

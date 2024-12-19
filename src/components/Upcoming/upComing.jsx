@@ -1,34 +1,37 @@
 import React, { useEffect } from "react";
-import SectionTitle from "../Card/SectionTitle";
-
+import upcoming from "../../assets/Images/Phases/DHA Gandhara.jpg";
+import upcoming1 from "../../assets/Images/Phases/Margalla Enclave Pic.jpg";
+import upcoming2 from "../../assets/Images/Phases/Margalla Orchard Pic.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionBlocks from "../Home/SectionBlocks";
+import HeroSectionWithHeading from "../Share/HeroScetionWithHeading";
+import AdvertisementCard from "../Advertisement/AdvertisementCard";
 const LatestProjects = [
+  // {
+  //   title: "Phase VI (Ex Phase - II Ext)",
+  //   link: "/phase-VI-details",
+  //   videoUrl:
+  //     "/DHA Phase 2 Islamabad Central Park  4K  Drone Cinematics720p.mp4",
+  //   imageUrl: upcoming,
+  //   description:
+  //     "DHA Islamabad-Rawalpindi Phase VI (Ex Phase – II Ext) has launched in March 2005 and is spread over an area of 55,000 kanals...",
+  // },
   {
-    title: "Phase III",
+    title: "Margalla Enclave",
     link: "/phase-III-details",
 
-    img: "upcoming1.jfif",
+    imageUrl: upcoming1,
     description:
       "Located at the heart of enchanting Potohar Region, DHA Phase III promises elegant town planning with modernized residential...",
   },
   {
-    title: "Phase IV",
+    title: "Margalla Orchard",
     link: "/phase-IV-details",
 
-    img: "/upcoming2.jpg",
+    imageUrl: upcoming2,
     description:
       "Designed over an area of approx 4000 Kanals, DHA Phase IV is located adjacent to Orchard Area, DHA Phase I...",
-  },
-  {
-    title: "Phase VI (Ex Phase - II Ext)",
-    link: "/phase-VI-details",
-    videoUrl:
-      "/DHA Phase 2 Islamabad Central Park  4K  Drone Cinematics720p.mp4",
-    img: "/upcoming3.jfif",
-    description:
-      "DHA Islamabad-Rawalpindi Phase VI (Ex Phase – II Ext) has launched in March 2005 and is spread over an area of 55,000 kanals...",
   },
 ];
 
@@ -42,15 +45,11 @@ const Upcoming = () => {
   }, []);
   return (
     <>
-      <div
-        className=" text-white relative px-5 py-4  "
-        // style={{
-        //   backgroundImage: "url(/1111.png)",
-        //   // backgroundPosition: "center",
-        //   backgroundRepeat: "no-repeat",
-        //   // backgroundSize: "150px 150px",
-        // }}
-      >
+      <HeroSectionWithHeading
+        // heading="UpComing Project"
+        backgroundImage={upcoming}
+      />
+      <div className=" text-white relative px-5 py-4  ">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url("/uper gradiant copy.jpg")' }}
@@ -68,13 +67,17 @@ const Upcoming = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <SectionBlocks
+                <AdvertisementCard
+                  imageUrl={phase.imageUrl}
+                  title={phase.title}
+                />
+                {/* <SectionBlocks
                   img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
                   description={phase.description}
                   link={phase.link}
-                />
+                /> */}
               </div>
             ))}
           </div>
