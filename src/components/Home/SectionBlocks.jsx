@@ -29,7 +29,7 @@ const SectionBlocks = ({ img, title, description, link }) => {
             }}
           ></div>
           {/* Description Text */}
-          <span className="relative z-10">{description}</span>
+          <span className="relative cursor-pointer z-10">{description}</span>
         </div>
 
         {/* Link Section */}

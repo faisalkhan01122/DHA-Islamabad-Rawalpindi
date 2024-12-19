@@ -1,6 +1,6 @@
 import React from "react";
 import PhasesDetails from "../../components/PhasesDetails";
-import phase6 from "../../assets/Phases/phase567.mp4";
+import phase6 from "../../assets/Phases/phase6.mp4";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 
 import phase6details1 from "../../assets/Images/Phases/phasevi1.png";

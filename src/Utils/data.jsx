@@ -81,7 +81,7 @@ export const menuData = [
   { label: "Services", link: "/services" },
   {
     label: "Member Portal",
-    // link: "/loginForm" ,
+    link: "/loginForm",
     sub: [
       // { subLabel: "Guide", link: "/guide" },
 

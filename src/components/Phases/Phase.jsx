@@ -11,6 +11,8 @@ import phiii from "../../assets/Images/Phases/Ph-3.jpg";
 import phiv from "../../assets/Images/Phases/Ph-4.jpg";
 import phv from "../../assets/Images/Phases/Ph-5.jpg";
 import phvi from "../../assets/Images/Phases/Ph-6.jpg";
+import HeroSectionWithHeading from "../Share/HeroScetionWithHeading";
+import bgphase from "../../assets/Phases/phase21.mp4";
 const phases = [
   {
     title: "Phase I",
@@ -67,6 +69,7 @@ const Phase = () => {
   }, []);
   return (
     <>
+      <HeroSectionWithHeading heading="Phases" backgroundVideo={bgphase} />
       <div className=" text-white relative px-5 py-4  ">
         {" "}
         <div
@@ -75,9 +78,9 @@ const Phase = () => {
         ></div>
         <div className="absolute inset-0 bg-white/70"></div>
         <div className="w-full relative max-w-4xl mx-auto my-3 px-4">
-          <h1 className=" text-center text-primary text-lg my-5  md:text-3xl font-bold">
+          {/* <h1 className=" text-center text-primary text-lg my-5  md:text-3xl font-bold">
             <span className="border-b-2 border-primary">Phases</span>
-          </h1>
+          </h1> */}
           {/* <SectionTitle title="" /> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 ">
             {phases.map((phase, index) => (

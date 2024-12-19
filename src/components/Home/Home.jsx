@@ -13,7 +13,7 @@ import OurProjectSlider from "../OurProjectSlider";
 import LifeStyleSlider from "../LifeStyleSlider";
 
 import { phasesData } from "../../Utils/data";
-import bgvideo from "../../assets/Phases/phase567.mp4";
+import bgvideo from "../../assets/Phases/homedha.mp4";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -30,7 +30,7 @@ const Home = () => {
       {/* Video Background */}
       <div className="relative w-full h-full">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-70"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
           src={bgvideo} // Replace with your video path
           autoPlay
           loop
@@ -42,7 +42,7 @@ const Home = () => {
           {/* Phases Section */}
           <div className="text-white grid grid-cols-1 md:grid-cols-2 px-4 gap-6 py-5 mx-auto max-w-4xl">
             {phasesData.map((phase, index) => (
-              <div key={index}>
+              <div data-aos="flip-right" key={index}>
                 <SectionBlocks
                   img={phase.img}
                   title={phase.title}
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
 
           {/* Images Grid */}
-          <div className="max-w-4xl mx-auto p-4 my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="max-w-4xl mx-auto p-4 mt-5 grid grid-cols-2 md:grid-cols-5 gap-4">
             {images.map((image, index) => (
               <img
                 key={index}
