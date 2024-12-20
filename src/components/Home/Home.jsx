@@ -63,7 +63,7 @@ const Home = () => {
           </div>
 
           {/* Lifestyle Slider Section */}
-          <div>
+          <div data-aos="flip-left">
             <h1 className="pt-4 text-center text-primary text-lg uppercase md:text-3xl font-bold">
               <span className="border-b-2 border-primary">LifeStyle</span>
             </h1>
@@ -71,7 +71,10 @@ const Home = () => {
           </div>
 
           {/* Images Grid */}
-          <div className="max-w-4xl mx-auto p-4 mt-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div
+            className="max-w-4xl mx-auto p-4 mt-5 grid grid-cols-2 md:grid-cols-5 gap-4"
+            data-aos="flip-right"
+          >
             {images.map((image, index) => (
               <img
                 key={index}

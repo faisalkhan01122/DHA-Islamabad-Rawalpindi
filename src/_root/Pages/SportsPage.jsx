@@ -89,7 +89,7 @@ const SportsPage = () => {
               <div
                 key={index}
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
-                data-aos="zoom-in"
+                data-aos="flip-right"
               >
                 <AdvertisementCard
                   imageUrl={phase.imageUrl}

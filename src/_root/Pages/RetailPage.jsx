@@ -2,26 +2,46 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Retail1 from "../../assets/Images/RandomImages/reatil.jpg";
-import Retail2 from "../../assets/Images/RandomImages/retil2.jpeg";
+import Retail1 from "../../assets/Images/RandomImages/retails11.jpg";
+import Retail2 from "../../assets/Images/RandomImages/retails2.jpg";
 import Retails from "../../assets/Images/RandomImages/retails1.jpg";
-
-import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
+import Retail3 from "../../assets/Images/RandomImages/retails3.jpg";
+import Retail4 from "../../assets/Images/RandomImages/retails.jpg";
+// import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
+import SectionBlocks from "../../components/Home/SectionBlocks";
 const onGoings = [
   {
-    // title: "APS",
+    title: "Giga Mall",
 
     link: "/phase-V-details",
-    imageUrl: Retail1,
-    description: "Data Required",
+    img: Retail1,
+    description:
+      "Located in DHA Phase II, Giga Mall is one of the largest shopping centers in Islamabad, featuring over 200 national and international brands, a food court, and entertainment facilities.",
   },
   {
-    // title: "APS",
+    title: "Amazon Mall",
 
     link: "/phase-V-details",
-    imageUrl: Retail2,
-    description: "Data Required",
+    img: Retail2,
+    description:
+      "Situated in DHA Phase II, Amazon Mall features factory outlets of various brands, offering a range of products at competitive prices",
+  },
+  {
+    title: "Hamleys Toy Store",
+
+    link: "/phase-V-details",
+    img: Retail3,
+    description:
+      "A renowned British toy retailer with a branch in DHA Phase II, offering a wide selection of toys and games for children.",
+  },
+  {
+    title: "World Trade Center Islamabad",
+
+    link: "/phase-V-details",
+    img: Retail4,
+    description:
+      "Also known as Giga Mall Extension, this complex in DHA Phase II includes retail outlets, offices, and dining options, enhancing the shopping experience.",
   },
 ];
 
@@ -52,11 +72,14 @@ const RetailPage = () => {
               <div
                 key={index}
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
-                data-aos="zoom-in"
+                data-aos="flip-right"
               >
-                <AdvertisementCard
+                <SectionBlocks
+                  img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
+                  description={phase.description}
+                  link={phase.link}
                 />
               </div>
             ))}

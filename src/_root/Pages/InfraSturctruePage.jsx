@@ -2,25 +2,44 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import infra from "../../assets/Images/RandomImages/infra66.jpg";
-import infra1 from "../../assets/Images/RandomImages/infra2.jpeg";
-import infra2 from "../../assets/Images/RandomImages/infra77.jpg";
-
-import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
+import infra1 from "../../assets/Images/RandomImages/infras1.jpeg";
+import infra2 from "../../assets/Images/RandomImages/infras2.jpeg";
+import infra3 from "../../assets/Images/RandomImages/infras3.jpeg";
+import infra4 from "../../assets/Images/RandomImages/infras4.jpeg";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
+import SectionBlocks from "../../components/Home/SectionBlocks";
 const onGoings = [
   {
-    // title: "APS",
+    title: " Road Networks",
 
     link: "/phase-V-details",
-    imageUrl: infra1,
-    description: "Data Required",
+    img: infra1,
+    description:
+      "Wide, paved roads with signal-free corridors ensure smooth traffic flow.",
   },
   {
-    // title: "APS",
+    title: "Healthcare Facilities",
 
     link: "/phase-V-details",
-    imageUrl: infra2,
-    description: "Data Required",
+    img: infra2,
+    description:
+      " Well-equipped hospitals and clinics, including DHA Medical Centre, cater to residents' health needs.",
+  },
+  {
+    title: "Commercial Hubs",
+
+    link: "/phase-V-details",
+    img: infra3,
+    description:
+      " Shopping centers like Giga Mall and Amazon Mall offer diverse retail options.",
+  },
+  {
+    title: "Recreational Spaces",
+
+    link: "/phase-V-details",
+    img: infra4,
+    description:
+      "Parks, playgrounds, and sports complexes like River View Sports Complex promote a healthy lifestyle.",
   },
 ];
 
@@ -58,9 +77,12 @@ const InfraSturctruePage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <AdvertisementCard
+                <SectionBlocks
+                  img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
+                  description={phase.description}
+                  link={phase.link}
                 />
               </div>
             ))}
