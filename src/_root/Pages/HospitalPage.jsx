@@ -9,9 +9,10 @@ import jk1 from "/dining-tables.jpg";
 // import jk4 from "../../assets/Images/RandomImages/jk5.png";
 import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
+import JacrandaCard from "../../components/Advertisement/JacrandaCard";
 const onGoings = [
   {
-    title: "jacaranda family club",
+    title: "Jacaranda Family Club, Phase 2",
 
     link: "https://www.jacarandadha.com/",
     imageUrl: jk1,
@@ -71,7 +72,7 @@ const HospitalPage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="zoom-in"
               >
-                <AdvertisementCard
+                <JacrandaCard
                   imageUrl={phase.imageUrl}
                   title={phase.title}
                   link={phase.link}

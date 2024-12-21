@@ -10,6 +10,7 @@ import Retail4 from "../../assets/Images/RandomImages/retails.jpg";
 // import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 import SectionBlocks from "../../components/Home/SectionBlocks";
+import RetailsCard from "../../components/RetailsCard";
 const onGoings = [
   {
     title: "Giga Mall",
@@ -74,12 +75,12 @@ const RetailPage = () => {
                 className="transform transition-transform hover:scale-102 hover:shadow-xl hover:bg-opacity-90 duration-300 ease-in-out   rounded-lg"
                 data-aos="flip-right"
               >
-                <SectionBlocks
+                <RetailsCard
                   img={phase.img}
                   imageUrl={phase.imageUrl}
                   title={phase.title}
                   description={phase.description}
-                  link={phase.link}
+                  // link={phase.link}
                 />
               </div>
             ))}

@@ -49,7 +49,7 @@ const LifeStyleSlider = () => {
     slidesToScroll: 1, // Number of slides to scroll
     autoplay: false, // Autoplay the slides
     autoplaySpeed: 3000, // Delay between slides
-    arrows: false, // Disable side buttons
+    arrows: true, // Disable side buttons
     responsive: [
       {
         breakpoint: 1024, // For medium screens (laptop)

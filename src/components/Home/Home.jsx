@@ -54,16 +54,6 @@ const Home = () => {
               </div>
             ))}
           </div>
-
-          {/* Our Project Slider Section */}
-          <div className="max-w-4xl w-full mx-auto" data-aos="zoom-in">
-            <h1 className="text-center text-primary text-lg md:text-3xl font-bold">
-              <span className="border-b-2 border-primary">
-                UpComing Projects
-              </span>
-            </h1>
-            <OurProjectSlider />
-          </div>
           {/* Our Project Slider Section */}
           <div className="max-w-4xl w-full mx-auto" data-aos="flip-left">
             <h1 className="text-center text-primary text-lg md:text-3xl font-bold">
@@ -72,6 +62,15 @@ const Home = () => {
               </span>
             </h1>
             <OnGoingPro />
+          </div>
+          {/* Our Project Slider Section */}
+          <div className="max-w-4xl w-full mx-auto" data-aos="zoom-in">
+            <h1 className="text-center text-primary text-lg md:text-3xl font-bold">
+              <span className="border-b-2 border-primary">
+                UpComing Projects
+              </span>
+            </h1>
+            <OurProjectSlider />
           </div>
 
           {/* Lifestyle Slider Section */}

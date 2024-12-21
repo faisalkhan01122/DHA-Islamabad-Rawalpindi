@@ -1,14 +1,15 @@
-import image1 from "../assets/Images/Advertisements/real-state.jpg";
-import image2 from "../assets/Images/Advertisements/DHA-security.jpg";
-import image3 from "../assets/Images/Advertisements/notice.jpg";
-import image4 from "../assets/Images/Advertisements/ips.jpg";
-import image5 from "../assets/Images/Advertisements/phase-4.jpeg";
-import image6 from "../assets/Images/Advertisements/river-view.jpg";
-import image7 from "../assets/Images/Advertisements/phase-v.jpg";
-import image8 from "../assets/Images/Advertisements/expressway.jpg";
-import image9 from "../assets/Images/Advertisements/secter-j.jpg";
-import image10 from "../assets/Images/Advertisements/secter-k.jpg";
-import image12 from "../assets/Images/Advertisements/auction.jpg";
+import image1 from "../assets/Images/RandomImages/Sports Facilities of DHAI-R1.png";
+import image2 from "../assets/Images/RandomImages/Water Brochure.pdf.webp";
+import image3 from "../assets/Images/RandomImages/Home Maintenance Services of DHAI-R1.png";
+import image4 from "../assets/Images/RandomImages/Avicena Medical Centre Phase 1 & 1.pdf.png";
+import image5 from "../assets/Images/RandomImages/DHAI-R Education System1.png";
+import image6 from "../assets/Images/RandomImages/Enhanced Connectivity1.png";
+import pdf1 from "../assets/Images/RandomImages/Sports Facilities of DHAI-R.pdf";
+import pdf2 from "../assets/Images/RandomImages/Water Brochure.pdf.webp";
+import pdf3 from "../assets/Images/RandomImages/Home Maintenance Services of DHAI-R.pdf";
+import pdf4 from "../assets/Images/RandomImages/Avicena Medical Centre Phase 1 & 2.pdf";
+import pdf5 from "../assets/Images/RandomImages/DHAI-R Education System.pdf";
+import pdf6 from "../assets/Images/RandomImages/Enhanced Connectivity.pdf";
 // import { title } from "framer-motion/client";
 // import { label } from "framer-motion/client";
 import ph1 from "../assets/Images/Phases/Ph-1.jpg";
@@ -152,49 +153,55 @@ export const dropdownData = [
 
 export const advertisementData = [
   {
-    imageUrl: image1,
-    title: "Real Estate Investment in Pakistan",
-  },
-  {
-    imageUrl: image2,
-    title: "DHA Security",
-  },
-  {
     imageUrl: image3,
-    title: "Important Notice",
+    title: "Home Maintenance Services of DHAI-R",
+    pdfUrl: pdf3,
   },
   {
     imageUrl: image4,
-    title: "IPS - 2024",
+    title: "Avicena Medical Centre Phase 1 & 2",
+    pdfUrl: pdf4,
   },
   {
     imageUrl: image5,
-    title: "Possession of Plots Sector , Phase-IV",
+    title: "DHAI-R Education System",
+    pdfUrl: pdf5,
+  },
+  {
+    imageUrl: image2,
+    title: "Water Brochure",
+    pdfUrl: pdf2,
   },
   {
     imageUrl: image6,
-    title: "River View South",
+    title: "Enhanced Connectivity",
+    pdfUrl: pdf6,
   },
   {
-    imageUrl: image7,
-    title: "Possession of Residential Plots Sector J, Phase-V",
+    imageUrl: image1,
+    title: "Sports Facilities of DHAI-R",
+    pdfUrl: pdf1,
   },
-  {
-    imageUrl: image8,
-    title: "Ground Breaking of DHA Interchange on Islamabad Express Way",
-  },
-  {
-    imageUrl: image9,
-    title: "Possession of Residential Plots Sector J, Phase-V",
-  },
-  {
-    imageUrl: image10,
-    title: "Possession of Residential Plots Sector J, Phase-V",
-  },
-  {
-    imageUrl: image12,
-    title: "Open Auction",
-  },
+  // {
+  //   imageUrl: image7,
+  //   title: "Possession of Residential Plots Sector J, Phase-V",
+  // },
+  // {
+  //   imageUrl: image8,
+  //   title: "Ground Breaking of DHA Interchange on Islamabad Express Way",
+  // },
+  // {
+  //   imageUrl: image9,
+  //   title: "Possession of Residential Plots Sector J, Phase-V",
+  // },
+  // {
+  //   imageUrl: image10,
+  //   title: "Possession of Residential Plots Sector J, Phase-V",
+  // },
+  // {
+  //   imageUrl: image12,
+  //   title: "Open Auction",
+  // },
 ];
 
 export const EventData = [

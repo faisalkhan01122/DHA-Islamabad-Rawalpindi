@@ -151,7 +151,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row gap-6 w-full mx-auto p-6">
         {/* Column 1: Images */}
         <div className="flex flex-col items-center md:w-2/3">
-          <div className="mb-4">
+          <div className="mb-4 flex items-center">
             <img
               src="/dhalog1o.jpg"
               alt="DHA Logo"
