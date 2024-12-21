@@ -3,43 +3,43 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionBlocks from "../../components/Home/SectionBlocks";
 
-import healthcare1 from "../../assets/Images/RandomImages/health3.jpg";
-import healthcare2 from "../../assets/Images/RandomImages/health2.jpg";
-import healthcare3 from "../../assets/Images/RandomImages/health1.jpg";
-import healthcare4 from "../../assets/Images/RandomImages/health4.jpg";
+// import healthcare1 from "../../assets/Images/RandomImages/health3.jpg";
+// import healthcare2 from "../../assets/Images/RandomImages/health2.jpg";
+// import healthcare3 from "../../assets/Images/RandomImages/health1.jpg";
+import healthcare5 from "/ivee.jpeg";
 const onGoings = [
   {
-    title: " Emergency Care",
+    title: " Avicenna Medical Centre Phase 1",
 
     link: "/phase-V-details",
-    img: healthcare1,
+    img: healthcare5,
     description:
       "24/7 emergency surgical and medical aid with advanced equipment and medicines for employees and residents.",
   },
   {
-    title: "Health Awareness ",
+    title: "Avicenna Medical Centre Phase 2",
 
     link: "/phase-V-details",
-    img: healthcare2,
+    img: healthcare5,
     description:
       "Regular lectures and programs to promote health education and disease prevention.",
   },
   {
-    title: "Consultation & Ambulance",
+    title: "Avicenna Medical Centre Phase 3",
 
     link: "/phase-V-details",
-    img: healthcare3,
+    img: healthcare5,
     description:
       "Outdoor consultations and 24/7 ambulance services for residents of all ages.Let me know if you need further edits!",
   },
-  {
-    title: "On-Site Medical Facilities",
+  // {
+  //   title: "On-Site Medical Facilities",
 
-    link: "/phase-V-details",
-    img: healthcare4,
-    description:
-      "Fully equipped with modern medical equipment, furniture, and essential medicines for immediate care.",
-  },
+  //   link: "/phase-V-details",
+  //   img: healthcare4,
+  //   description:
+  //     "Fully equipped with modern medical equipment, furniture, and essential medicines for immediate care.",
+  // },
 ];
 
 const HealthCarePage = () => {
@@ -70,7 +70,7 @@ const HealthCarePage = () => {
         <div className="w-full relative max-w-4xl mx-auto my-3 px-4">
           <h1 className=" text-center text-primary text-lg my-5  md:text-3xl font-bold">
             <span className="border-b-2 uppercase border-primary">
-              HealthCare
+              Avicenna Medical Centres in all Phases
             </span>
           </h1>
           {/* <SectionTitle title="" /> */}

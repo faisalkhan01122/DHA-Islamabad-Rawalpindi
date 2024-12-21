@@ -4,7 +4,7 @@ import ad2 from "../../assets/Images/RandomImages/images5.png";
 import ad3 from "../../assets/Images/RandomImages/imges22.png";
 import ad4 from "../../assets/Images/RandomImages/images5(2).png";
 import ad5 from "../../assets/Images/RandomImages/images (1).jpeg";
-import ad1 from "../.././assets/Images/RandomImages/download.jpeg";
+import ad1 from "../.././assets/Images/RandomImages/dhhhh.jpeg";
 import SectionBlocks from "./SectionBlocks";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,6 +14,7 @@ import LifeStyleSlider from "../LifeStyleSlider";
 
 import { phasesData } from "../../Utils/data";
 import bgvideo from "../../assets/Phases/homedha.mp4";
+import OnGoingPro from "../OnGoingPro";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -57,9 +58,20 @@ const Home = () => {
           {/* Our Project Slider Section */}
           <div className="max-w-4xl w-full mx-auto" data-aos="zoom-in">
             <h1 className="text-center text-primary text-lg md:text-3xl font-bold">
-              <span className="border-b-2 border-primary">Our Project</span>
+              <span className="border-b-2 border-primary">
+                UpComing Projects
+              </span>
             </h1>
             <OurProjectSlider />
+          </div>
+          {/* Our Project Slider Section */}
+          <div className="max-w-4xl w-full mx-auto" data-aos="flip-left">
+            <h1 className="text-center text-primary text-lg md:text-3xl font-bold">
+              <span className="border-b-2 border-primary">
+                Ongoing Projects
+              </span>
+            </h1>
+            <OnGoingPro />
           </div>
 
           {/* Lifestyle Slider Section */}
@@ -71,18 +83,24 @@ const Home = () => {
           </div>
 
           {/* Images Grid */}
-          <div
-            className="max-w-4xl mx-auto p-4 mt-5 grid grid-cols-2 md:grid-cols-5 gap-4"
-            data-aos="flip-right"
-          >
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Image ${index + 1}`}
-                className="object-fill h-32 rounded-md shadow-md shadow-primary"
-              />
-            ))}
+          <div data-aos="flip-right">
+            {" "}
+            <h1 className="pt-4 text-center text-primary text-lg uppercase md:text-3xl font-bold">
+              <span className="border-b-2 border-primary">
+                {" "}
+                Associates Websites
+              </span>
+            </h1>
+            <div className="max-w-4xl mx-auto p-4 mt-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  className="object-fill h-32 rounded-md shadow-md shadow-primary"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

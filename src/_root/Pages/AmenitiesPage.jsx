@@ -3,24 +3,32 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Aminty from "../../assets/Images/RandomImages/aminty1.jpg";
-import Aminty1 from "../../assets/Images/RandomImages/sports6.png";
+import Aminty1 from "../../assets/Images/RandomImages/shutel.jpeg";
 import Aminty2 from "../../assets/Images/RandomImages/masjid.jpeg";
 // import Aminty3 from "../../assets/Images/RandomImages/aminties2323.jpeg";
 // import Aminty4 from "../../assets/Images/RandomImages/amintiessss.jpeg";
-import Aminty3 from "../../assets/Images/RandomImages/amintiessss.jpeg";
-import Aminty4 from "../../assets/Images/RandomImages/aminties2323.jpeg";
-// import Aminty5 from "../../assets/Images/RandomImages/aminty3.jpeg";
+import Aminty3 from "../../assets/Images/RandomImages/homemen.jpeg";
+import Aminty4 from "../../assets/Images/RandomImages/sluter.jpg";
+import Aminty5 from "../../assets/Images/RandomImages/se.jpeg";
 // import Aminty6 from "../../assets/Images/RandomImages/amity2.webp";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 import SectionBlocks from "../../components/Home/SectionBlocks";
 const onGoings = [
   {
-    title: " Sports Complexes",
+    title: " Shuttle Service",
 
     link: "/phase-V-details",
     img: Aminty1,
     description:
-      "State-of-the-art facilities offering various sports like futsal, tennis, and cricket.",
+      " DHAI-R takes pride in offering a convenient and reliable shuttle service for its residents and visitors, ensuring seamless connectivity within the community. This service is designed to provide a hassle-free transportation solution, connecting key areas within DHAI-R while prioritizing comfort and safety.",
+  },
+  {
+    title: "Home Maintenance Services",
+
+    link: "/phase-II-details",
+    img: Aminty3,
+    description:
+      " DHA Rawalpindi-Islamabad offers comprehensive Home Maintenance Services designed to keep your property in pristine condition. These services ensure convenience, safety, and reliability, catering to the unique needs of residents.",
   },
   {
     title: "Mosques",
@@ -30,29 +38,21 @@ const onGoings = [
     description:
       " Beautifully designed mosques providing serene spaces for prayer and reflection.",
   },
-  // {
-  //   title: "Community Clubs",
-
-  //   link: "/phase-V-details",
-  //   img: Aminty5,
-  //   description:
-  //     " Exclusive clubs featuring dining options, gyms, swimming pools, and event spaces.",
-  // },
   {
-    title: " Fitness Centers",
+    title: "Security ",
 
-    link: "/phase-I-details",
-    img: Aminty4,
+    link: "/security",
+    img: Aminty5,
     description:
-      " Modern gyms equipped with the latest fitness equipment for health enthusiasts.",
+      " DHA Rawalpindi-Islamabad provides top-tier Security Services to ensure the safety and peace of mind of its residents. With advanced technology, well-trained personnel, and round-the-clock monitoring, DHA maintains a secure and protected environment for everyone.",
   },
   {
-    title: "Entertainment Zones",
+    title: " Slaughter Houses",
 
     link: "/phase-II-details",
-    img: Aminty3,
+    img: Aminty4,
     description:
-      " Areas dedicated to cinemas, gaming zones, and children's play areas for family entertainment.",
+      " DHA Islamabad-Rawalpindi provides its residents with 24-hour security. Security personnel conduct mobile patrolling during the night. All security personnel are equipped with efficient wireless communication.",
   },
 ];
 

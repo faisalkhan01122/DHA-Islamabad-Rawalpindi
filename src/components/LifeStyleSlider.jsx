@@ -8,8 +8,10 @@ import LifeStyle1 from "../assets/Images/RandomImages/sports.png";
 import LifeStyle2 from "../assets/Images/RandomImages/DJI_0287.png";
 import LifeStyle3 from "../assets/Images/RandomImages/DSC_9794.png";
 import LifeStyle4 from "../assets/Images/RandomImages/3RWDS.png";
+import LifeStyle5 from "../assets/Images/RandomImages/infra66.jpg";
+import LifeStyle6 from "../assets/Images/RandomImages/jk1.png";
+import LifeStyle7 from "../assets/Images/RandomImages/retails1.jpg";
 import { Link } from "react-router-dom";
-import { link } from "framer-motion/client";
 
 const LifeStyleSlider = () => {
   const images = [
@@ -26,6 +28,17 @@ const LifeStyleSlider = () => {
       buttonText: "Amenities",
       link: "/lifestyle/amenities",
     },
+    {
+      src: LifeStyle6,
+      buttonText: "Hospitality",
+      link: "/lifestyle/hospitality",
+    },
+    {
+      src: LifeStyle5,
+      buttonText: "Infrastructure",
+      link: "/lifestyle/infrastructure",
+    },
+    { src: LifeStyle7, buttonText: "Retail", link: "/lifestyle/retail" },
   ];
 
   const settings = {

@@ -43,7 +43,7 @@ export const menuData = [
     link: "/aboutus",
   },
   {
-    label: "Our Projects",
+    label: "Projects",
     link: "/phase",
     sub: [
       { subLabel: "Phases", link: "/phase" },

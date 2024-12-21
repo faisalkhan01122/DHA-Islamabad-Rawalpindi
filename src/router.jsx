@@ -48,6 +48,7 @@ import ServicesPage from "./_root/Pages/ServicesPage";
 import DHABylawsPage from "./components/DHAbylaws/dhaByLaws";
 import TransferProcedure from "./components/Transferprocedure/transferProcedure";
 import DownloadPage from "./components/Download/downloadPage";
+import SecurityPage from "./_root/Pages/SecurityPage";
 
 const router = createBrowserRouter([
   {
@@ -176,7 +177,10 @@ const router = createBrowserRouter([
         path: "procedure/dha-valley/file-opening",
         element: <FileOpeningPage />,
       },
-
+      {
+        path: "/security",
+        element: <SecurityPage />,
+      },
       {
         path: "/saleproperty",
         element: <SaleProperty />,

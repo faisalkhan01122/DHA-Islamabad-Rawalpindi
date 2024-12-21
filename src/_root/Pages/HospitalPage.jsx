@@ -3,41 +3,41 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import jk from "../../assets/Images/RandomImages/jk1.png";
-import jk1 from "../../assets/Images/RandomImages/jk2.png";
-import jk2 from "../../assets/Images/RandomImages/jk3.png";
-import jk3 from "../../assets/Images/RandomImages/jk4.png";
-import jk4 from "../../assets/Images/RandomImages/jk5.png";
+import jk1 from "/dining-tables.jpg";
+// import jk2 from "../../assets/Images/RandomImages/jk3.png";
+// import jk3 from "../../assets/Images/RandomImages/jk4.png";
+// import jk4 from "../../assets/Images/RandomImages/jk5.png";
 import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
 const onGoings = [
   {
-    title: "Continental Restaurant",
+    title: "jacaranda family club",
 
-    link: "/phase-V-details",
+    link: "https://www.jacarandadha.com/",
     imageUrl: jk1,
     description: "Data Required",
   },
-  {
-    title: "Coffee Shop	",
+  // {
+  //   title: "Coffee Shop	",
 
-    link: "/phase-V-details",
-    imageUrl: jk2,
-    description: "Data Required",
-  },
-  {
-    title: "Western Restaurnat",
+  //   link: "/phase-V-details",
+  //   imageUrl: jk2,
+  //   description: "Data Required",
+  // },
+  // {
+  //   title: "Western Restaurnat",
 
-    link: "/phase-V-details",
-    imageUrl: jk3,
-    description: "Data Required",
-  },
-  {
-    title: "Jacaranda Wok ",
+  //   link: "/phase-V-details",
+  //   imageUrl: jk3,
+  //   description: "Data Required",
+  // },
+  // {
+  //   title: "Jacaranda Wok ",
 
-    link: "/phase-V-details",
-    imageUrl: jk4,
-    description: "Data Required",
-  },
+  //   link: "/phase-V-details",
+  //   imageUrl: jk4,
+  //   description: "Data Required",
+  // },
 ];
 
 const HospitalPage = () => {
@@ -74,6 +74,7 @@ const HospitalPage = () => {
                 <AdvertisementCard
                   imageUrl={phase.imageUrl}
                   title={phase.title}
+                  link={phase.link}
                 />
               </div>
             ))}

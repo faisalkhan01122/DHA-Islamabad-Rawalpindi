@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Retail1 from "../../assets/Images/RandomImages/retails11.jpg";
-import Retail2 from "../../assets/Images/RandomImages/retails2.jpg";
+// import Retail2 from "../../assets/Images/RandomImages/retails2.jpg";
 import Retails from "../../assets/Images/RandomImages/retails1.jpg";
-import Retail3 from "../../assets/Images/RandomImages/retails3.jpg";
+// import Retail3 from "../../assets/Images/RandomImages/retails3.jpg";
 import Retail4 from "../../assets/Images/RandomImages/retails.jpg";
 // import AdvertisementCard from "../../components/Advertisement/AdvertisementCard";
 import HeroSectionWithHeading from "../../components/Share/HeroScetionWithHeading";
@@ -19,22 +19,22 @@ const onGoings = [
     description:
       "Located in DHA Phase II, Giga Mall is one of the largest shopping centers in Islamabad, featuring over 200 national and international brands, a food court, and entertainment facilities.",
   },
-  {
-    title: "Amazon Mall",
+  // {
+  //   title: "Amazon Mall",
 
-    link: "/phase-V-details",
-    img: Retail2,
-    description:
-      "Situated in DHA Phase II, Amazon Mall features factory outlets of various brands, offering a range of products at competitive prices",
-  },
-  {
-    title: "Hamleys Toy Store",
+  //   link: "/phase-V-details",
+  //   img: Retail2,
+  //   description:
+  //     "Situated in DHA Phase II, Amazon Mall features factory outlets of various brands, offering a range of products at competitive prices",
+  // },
+  // {
+  //   title: "Hamleys Toy Store",
 
-    link: "/phase-V-details",
-    img: Retail3,
-    description:
-      "A renowned British toy retailer with a branch in DHA Phase II, offering a wide selection of toys and games for children.",
-  },
+  //   link: "/phase-V-details",
+  //   img: Retail3,
+  //   description:
+  //     "A renowned British toy retailer with a branch in DHA Phase II, offering a wide selection of toys and games for children.",
+  // },
   {
     title: "World Trade Center Islamabad",
 

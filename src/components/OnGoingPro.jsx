@@ -5,27 +5,27 @@ import "./OurProjectSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ourproject1 from "../assets/Images/Phases/DHA Gandhara.jpg";
-import ourproject2 from "../assets/Images/Phases/Margalla Enclave Pic.jpg";
-import ourproject3 from "../assets/Images/Phases/Margalla Orchard Pic.jpg";
+import ourproject1 from "../assets/Images/Phases/DHA Down Town.jpg";
+import ourproject2 from "../assets/Images/Phases/RVN Pic.jpg";
+import ourproject3 from "../assets/Images/Phases/RVS Pic (1).jpg";
 import { Link } from "react-router-dom";
 
-const OurProjectSlider = () => {
+const OnGoingPro = () => {
   const slides = [
     {
       img: ourproject1,
-      link: "/Upcoming",
-      title: "DHA Gandhara",
+      link: "/OnGoing",
+      title: "DHA Down Town",
     },
     {
       img: ourproject2,
-      link: "/Upcoming",
-      title: "Margalla Enclave",
+      link: "/OnGoing",
+      title: "River View North ",
     },
     {
       img: ourproject3,
-      link: "/Upcoming",
-      title: "Margalla Orchard",
+      link: "/OnGoing",
+      title: "River View South",
     },
   ];
 
@@ -81,4 +81,4 @@ const OurProjectSlider = () => {
   );
 };
 
-export default OurProjectSlider;
+export default OnGoingPro;
