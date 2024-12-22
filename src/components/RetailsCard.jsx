@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const RetailsCard = ({ img, title, description, link }) => {
   return (
-    <div className="bg-white rounded-md overflow-hidden border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary relative">
+    <div className="bg-white rounded-md cursor-pointer group overflow-hidden border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary relative">
       {/* Image Section */}
       <div className="relative w-full m-0 p-0">
         <img

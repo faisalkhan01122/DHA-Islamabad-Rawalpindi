@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const SectionBlocks = ({ img, title, description, link }) => {
   return (
-    <div className="bg-white rounded-md overflow-hidden border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary relative">
+    <div className="bg-white rounded-md group overflow-hidden cursor-pointer border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary relative">
       {/* Image Section */}
-      <div className="relative w-full m-0 p-0">
+      <div className="relative w-full  m-0 p-0">
         <img
           src={img}
           alt={title}
@@ -14,7 +14,7 @@ const SectionBlocks = ({ img, title, description, link }) => {
 
       {/* Content Section */}
       <div className="p-3 relative">
-        <h1 className="text-primary text-center font-bold text-xl mb-2">
+        <h1 className="text-primary text-center font-bold text-xl  mb-2">
           {title}
         </h1>
 

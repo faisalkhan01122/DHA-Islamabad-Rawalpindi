@@ -5,7 +5,7 @@ const MapSectionBlock = ({ img, imgHover, title, description, link }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="bg-white rounded-md overflow-hidden border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary">
+    <div className="bg-white cursor-pointer group rounded-md overflow-hidden border h-full md:h-[70vh] lg:h-full shadow-md shadow-primary">
       {/* Image Section */}
       <div
         className="relative w-full m-0 p-0"

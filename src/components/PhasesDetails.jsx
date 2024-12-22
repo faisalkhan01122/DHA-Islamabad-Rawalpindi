@@ -8,7 +8,7 @@ const PhasesDetails = ({
   dec2,
 }) => {
   return (
-    <div className="min-h-screen relative bg-cover bg-fixed bg-center text-[#707070]">
+    <div className="min-h-screen  relative bg-cover bg-fixed bg-center text-[#707070]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: 'url("/1111.png")' }}
