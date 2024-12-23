@@ -105,6 +105,7 @@
 // };
 
 // export default Footer;
+
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import {
@@ -150,19 +151,19 @@ const Footer = () => {
     <footer className="bg-primary text-black">
       <div className="flex flex-col md:flex-row gap-6 w-full mx-auto p-6">
         {/* Column 1: Images */}
-        <div className="flex flex-col items-center md:w-2/3">
+        <div className="flex gap-4 items-center md:w-2/3">
           <div className="mb-4 flex items-center">
             <img
               src="/dhalog1o.jpg"
               alt="DHA Logo"
-              className="object-contain w-48 h-auto"
+              className="object-contain w-32 h-auto" // Reduced width for the logo
             />
           </div>
           <div>
             <img
               src="/footerimg.png"
-              alt="Footer Graphic"
-              className="object-contain w-48 h-auto"
+              alt="QR Mobile App"
+              className="object-contain w-32 h-auto" // Set to appropriate size for the QR code
             />
           </div>
         </div>

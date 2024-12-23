@@ -97,11 +97,14 @@ export const menuData = [
     sub: [
       {
         subLabel: "Selling Zone",
-        link: "https://www.zameen.com/Homes/Islamabad-3-1.html",
+        link: "https://demo.phpscriptpoint.com/realspoint/",
       },
       // { subLabel: "Guide", link: "/guide" },
-      { subLabel: "Home Services", link: "/" },
-      { subLabel: "CMS", link: "/" },
+      {
+        subLabel: "Home Services",
+        link: "https://karsaaz.app/home-repair-maintenance-rawalpindi/",
+      },
+      { subLabel: "CMS", link: "https://demo.workdo.io/ticketgo/login/" },
     ],
   },
 ];
